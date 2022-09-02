@@ -32,7 +32,7 @@ money = 100
 
 while money >= 1:
     
-    spend = raw_input ("What would you like to buy?\n\n1 - Nintendo RPG ($59.99)\n2 - Cookies ($2.50)\n3 - Soccer Ball ($26.00)\n4 - Protection ;) ($99.00)\n5 - Lolipop ($1.00)\n\nPRESS A TO QUIT\n\n\n: ")
+    spend = raw_input ("What would you like to buy?\n\n1 - Nintendo RPG ($59.99)\n2 - Cookies ($2.50)\n3 - Soccer Ball ($26.00)\n4 - Armor ($99.00)\n5 - Lolipop ($1.00)\n\nPRESS A TO QUIT\n\n\n: ")
     
     if spend.upper() == "A":
         break
@@ -64,7 +64,7 @@ while money >= 1:
         elif spend == "4":
             money -= 99
             if money > 0:
-                print "You bought some \"Protection\"! ;)"
+                print "You bought some Armor! ;)"
                
             else:
                 print "Sorry, you don't have enough money!"
@@ -80,7 +80,7 @@ while money >= 1:
         print "\n"+str(money)+"\n"
 
 if money <= 0:
-    print "Your broke.  Go kill yourself."
+    print "You're broke."
 
 else:
     print "Come back again!"
